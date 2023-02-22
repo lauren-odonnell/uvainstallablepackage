@@ -14,6 +14,16 @@ def clean_string(str_word):
     assert isinstance(str_word, str), "String expected but recieved type {} instead".format(type(str_word))
 
     return str_word.strip()
+    
+def caps_string(str_word):
+    """
+    INPUTS:
+    str_word     string string contining several words to clean
+    RETURNS:
+    string       the string after adding capitalizing
+    """
+
+    return str_word.upper()
 
 import re
 def space_compress(stocomp):
