@@ -19,7 +19,7 @@ def test_fail_string():
 
     assert "T h i s   i s   a   t e s t   s t r i n g " == sh.clean_string(test_str), "String <{}> not cleaned as expected".format(test_str)
     
-@pytest.mark.skipif(sys.platform == 'darwin', reason="incorrect OS")
+@pytest.mark.skipif(sys.platform == 'linux', reason="incorrect OS")
 def test_skipif():
     test_str = " T h i s !  i s             a   , t e s t   s t r i n g     "
     print("My platform is", sys.platform)
